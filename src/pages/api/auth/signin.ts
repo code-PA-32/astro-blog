@@ -11,7 +11,7 @@ export const POST: APIRoute = async ({request, redirect}) => {
     const {data, error} = await supabase.auth.signInWithOAuth({
       provider: provider as any,
       options: {
-        redirectTo: "http://localhost:4321/api/auth/callback"
+        redirectTo: "https://astro-blog-five-cyan.vercel.app/api/auth/callback"
       },
     });
 
